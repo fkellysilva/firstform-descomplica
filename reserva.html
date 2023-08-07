@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservas </title>
+  <link rel="stylesheet" href="./reserva.css">
+</head>
+
+<body>
+  <h1> Reserve sua viagem conosco</h1>
+
+  <section>
+    <h2>Reserva da viagem</h2>
+
+    <form method="get">
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <label for="name">›
+          <p>Nome completo</p>
+          <input type="text" name="name" id="name" required>
+        </label><br><br>
+
+        <label for="email">
+          <p>E-mail</p>
+          <input type="text" name="email" id="email">
+        </label><br>
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Quais serviço deseja contratar?</legend>
+        <input type="checkbox" name="passagens" value="Passagens">Compra de passagens
+        <br><input type="checkbox" name="hospedagem" value="hospedagens">Reserva de hospedagem
+        <br> <input type="checkbox" name="aluguel de veiculo" value="aluguel"> Aluguel de veículos
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Forma de pagamento</legend>
+        <input type="radio" name="payment" value="Cartão de crédito"> Cartão de crédito
+        <br><input type="radio" name="payment" value="boleto">Boleto
+        <br><input type="radio" name="payment" value="Pix">Pix
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Prazo de pagamento</legend>
+        <select name="prazoPagamento">
+          <option value="aVista"> Á Vista</option>
+          <option value="5x">5x sem juros</option>
+          <option value="10x">10x com juros</option>
+        </select>
+      </fieldset> <br>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+</body>
+
+</html>
